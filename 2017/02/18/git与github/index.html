@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | Hexo</title>
+    <title>Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="John Doe">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+    <meta name="description" content="git与github说明 只记录一下学习的历程和踩过的坑.
+初识git与github在知乎上无数次的看到github，出现频率太高了，所以自己也想去了解一下这到底是个什么。之后注册了一个github账号，感觉一开始很不习惯，全英文，然后下载了git，还是一脸迷茫的状态，之后我被命令行给吓跑了，觉得特">
     
     
     
@@ -65,15 +66,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/02/15/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2017/02/18/git与github/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="John Doe">John Doe</a>
     </p>
   <p class="article-time">
-    <time datetime="2017-02-14T16:09:44.564Z" itemprop="datePublished">2017-02-15</time>
-    更新日期:<time datetime="2017-02-14T16:09:44.564Z" itemprop="dateModified">2017-02-15</time>
+    <time datetime="2017-02-18T12:42:21.040Z" itemprop="datePublished">2017-02-18</time>
+    更新日期:<time datetime="2017-02-18T15:19:00.539Z" itemprop="dateModified">2017-02-18</time>
     
   </p>
 </header>
@@ -82,18 +83,26 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git与github"><span class="toc-number">1.</span> <span class="toc-text">git与github</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初识git与github"><span class="toc-number">1.1.</span> <span class="toc-text">初识git与github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有关git与github一定要弄清的几点"><span class="toc-number">1.2.</span> <span class="toc-text">有关git与github一定要弄清的几点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#我踩过的坑"><span class="toc-number">1.3.</span> <span class="toc-text">我踩过的坑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有关github-pages"><span class="toc-number">1.4.</span> <span class="toc-text">有关github pages</span></a></li></ol></li></ol>
 		</div>
 		
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<h2 id="git与github"><a href="#git与github" class="headerlink" title="git与github"></a>git与github</h2><p><strong>说明</strong> 只记录一下学习的历程和踩过的坑.</p>
+<h3 id="初识git与github"><a href="#初识git与github" class="headerlink" title="初识git与github"></a>初识git与github</h3><p>在知乎上无数次的看到github，出现频率太高了，所以自己也想去了解一下这到底是个什么。之后注册了一个github账号，感觉一开始很不习惯，全英文，然后下载了git，还是一脸迷茫的状态，之后我被命令行给吓跑了，觉得特别特别的神奇。<br>后面我又跑回了，不就是命令行吗？去看了一个系列的文章，看了几个视频，大概也能懂了。而github，个人感觉，这不就是qq吗，也可以说这是一个社交平台。<br>.</p>
+<p>github与qq:</p>
+<ul>
+<li>github：发表代码 qq：发表心情</li>
+<li>github ：我有github pages qq：我有空间</li>
+</ul>
+<h3 id="有关git与github一定要弄清的几点"><a href="#有关git与github一定要弄清的几点" class="headerlink" title="有关git与github一定要弄清的几点"></a>有关git与github一定要弄清的几点</h3><p>开始真的要把逻辑理顺了，虽然到目前为止，自己感觉也理的不太顺，但也只能先这么理解了，一开始使用一定先自己玩熟了，再去弄清几个人合作的有关问题。比如一个文件，<strong>那么怎样使用git把我自已写的代码发到github上去</strong>，从命令行的角度来说，都可以说可以使用完全不同的方法去完成这件事，然后这就为新手挖了一个巨大的坑。所以开始光记住命令行一样会糊，这时可以去了解一些背景，比如svn与git他们之间的区别，有关git的一些工作原理，也不需要记住多少专业的，但一定要有几个概念：</p>
+<ol>
+<li>本地和远程</li>
+<li>工作区和版本库（Repository）</li>
+<li>暂存区<br>.</li>
+</ol>
+<h3 id="我踩过的坑"><a href="#我踩过的坑" class="headerlink" title="我踩过的坑"></a>我踩过的坑</h3><p>切换目录，你想要传那个文件，一定记得切换目录，这个在git命令框最上面的右上角能够看到你在哪个目录底下，或者输入命令pwd，或者直接右键文件用git bash打开.<br>第二个坑是有关自己看教程，如果看不懂，那么多看几个人的就看懂了，比如我刚开始看廖雪峰老师写的git教程，很迷糊，后面就去知乎上看了一个写给小白的教程，一下子就入了门，但这之中看了很多的文章，但回头再看廖老师写的，不可否认，真的写的很好，但写的好的有时不一定能让你豁然开朗，所以多看吧。</p>
+<h3 id="有关github-pages"><a href="#有关github-pages" class="headerlink" title="有关github pages"></a>有关github pages</h3><p>简直要被这个坑死，我打不开我的我的域名网址，一度以为我操作除了问题，一度绝望，但是万万没想打，是我的电脑抽了，然后发现百度浏览器才能打开，谷歌、360、火狐都打不开，然后它自己又抽好了，到现在也不知道怎么回事，难道浏览器下多了.</p>
+<p>额，还真是有意思呢！！！！.</p>
+<p>###写在最后的话###<br>兴趣是最好的老师，qq刚兴起的时候，多少人秒入门。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -103,7 +112,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2017/02/15/hello-world/" data-title="Hello World | Hexo" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2017/02/18/git与github/" data-title="Hexo" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -112,14 +121,14 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/02/18/git与github/" title="">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  (no title)</span>
+
+<div class="next">
+<a href="/2017/02/15/hello-world/"  title="Hello World">
+ <strong>NEXT:</strong><br/> 
+ <span>Hello World
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -129,7 +138,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git与github"><span class="toc-number">1.</span> <span class="toc-text">git与github</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初识git与github"><span class="toc-number">1.1.</span> <span class="toc-text">初识git与github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有关git与github一定要弄清的几点"><span class="toc-number">1.2.</span> <span class="toc-text">有关git与github一定要弄清的几点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#我踩过的坑"><span class="toc-number">1.3.</span> <span class="toc-text">我踩过的坑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有关github-pages"><span class="toc-number">1.4.</span> <span class="toc-text">有关github pages</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
