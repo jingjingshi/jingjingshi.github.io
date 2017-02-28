@@ -5,31 +5,39 @@
   <meta charset="UTF-8">
   
     <title>jingjing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="jingjing">
     
+
     
+    <meta property="og:type" content="website">
+<meta property="og:title" content="jingjing">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="jingjing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jingjing">
+
     
-    
-    <link rel="alternate" href="/atom.xml" title="jingjing" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="jingjing" type="application/atom+xml">
     
     
     <link rel="icon" href="/img/favicon.ico">
     
     
-    <link rel="apple-touch-icon" href="/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
     
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
   <body>
     <header>
-      <div>
+      
+<div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/logo.svg" alt="jingjing" title="jingjing"/></a>
+				<a href="/"><img src="/img/logo.png" alt="jingjing" title="jingjing"/></a>
 			</div>
 			
 			<div id="textlogo">
@@ -40,18 +48,19 @@
 			</a></div>
 			<nav class="animated">
 				<ul>
-					
+					<ul>
+					 
 						<li><a href="/">Home</a></li>
 					
 						<li><a href="/archives">Archives</a></li>
 					
-						<li><a href="/about">about</a></li>
+						<li><a href="/about">About</a></li>
 					
 					<li>
-					
+ 					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -59,43 +68,133 @@
 				</ul>
 			</nav>			
 </div>
-
     </header>
     <div id="container">
       <div id="main">
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/02/18/git与github/" title="" itemprop="url">
-  
-    <h1 itemprop="name"></h1>
+   
     
-     
-           <p itemprop="description" >git与github说明 只记录一下学习的历程和踩过的坑.
-初识git与github在知乎上无数次的看到github，出现频率太高了，所以自己也想去了解一下这到底是个什么。之后注册了一个github账号，感觉一开始很不习惯，全英文，然后下载了git，还是一脸迷茫的状态，之后我被命</p>
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/02/18/git与github/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="jingjing" target="_blank" itemprop="author">jingjing</a>
+		
+  <p class="article-time">
+    <time datetime="2017-02-18T12:42:21.040Z" itemprop="datePublished"> 发表于 2017-02-18</time>
+    
+  </p>
+</header>
+    <div class="article-content">
         
-    
-    <time datetime="2017-02-18T12:42:21.040Z" itemprop="datePublished">2017-02-18</time>
-  </a>
+        <h2 id="git与github"><a href="#git与github" class="headerlink" title="git与github"></a>git与github</h2><p><strong>说明</strong> 只记录一下学习的历程和踩过的坑.</p>
+<h3 id="初识git与github"><a href="#初识git与github" class="headerlink" title="初识git与github"></a>初识git与github</h3><p>在知乎上无数次的看到github，出现频率太高了，所以自己也想去了解一下这到底是个什么。之后注册了一个github账号，感觉一开始很不习惯，全英文，然后下载了git，还是一脸迷茫的状态，之后我被命令行给吓跑了，觉得特别特别的神奇。<br>后面我又跑回了，不就是命令行吗？去看了一个系列的文章，看了几个视频，大概也能懂了。而github，个人感觉，这不就是qq吗，也可以说这是一个社交平台。<br>.</p>
+<p>github与qq:</p>
+<ul>
+<li>github：发表代码 qq：发表心情</li>
+<li>github ：我有github pages qq：我有空间</li>
+</ul>
+<h3 id="有关git与github一定要弄清的几点"><a href="#有关git与github一定要弄清的几点" class="headerlink" title="有关git与github一定要弄清的几点"></a>有关git与github一定要弄清的几点</h3><p>开始真的要把逻辑理顺了，虽然到目前为止，自己感觉也理的不太顺，但也只能先这么理解了，一开始使用一定先自己玩熟了，再去弄清几个人合作的有关问题。比如一个文件，<strong>那么怎样使用git把我自已写的代码发到github上去</strong>，从命令行的角度来说，都可以说可以使用完全不同的方法去完成这件事，然后这就为新手挖了一个巨大的坑。所以开始光记住命令行一样会糊，这时可以去了解一些背景，比如svn与git他们之间的区别，有关git的一些工作原理，也不需要记住多少专业的，但一定要有几个概念：</p>
+<ol>
+<li>本地和远程</li>
+<li>工作区和版本库（Repository）</li>
+<li>暂存区<br>.</li>
+</ol>
+<h3 id="我踩过的坑"><a href="#我踩过的坑" class="headerlink" title="我踩过的坑"></a>我踩过的坑</h3><p>切换目录，你想要传那个文件，一定记得切换目录，这个在git命令框最上面的右上角能够看到你在哪个目录底下，或者输入命令pwd，或者直接右键文件用git bash打开.<br>第二个坑是有关自己看教程，如果看不懂，那么多看几个人的就看懂了，比如我刚开始看廖雪峰老师写的git教程，很迷糊，后面就去知乎上看了一个写给小白的教程，一下子就入了门，但这之中看了很多的文章，但回头再看廖老师写的，不可否认，真的写的很好，但写的好的有时不一定能让你豁然开朗，所以多看吧。</p>
+<h3 id="有关github-pages"><a href="#有关github-pages" class="headerlink" title="有关github pages"></a>有关github pages</h3><p>简直要被这个坑死，我打不开我的我的域名网址，一度以为我操作除了问题，一度绝望，但是万万没想打，是我的电脑抽了，然后发现百度浏览器才能打开，谷歌、360、火狐都打不开，然后它自己又抽好了，到现在也不知道怎么回事，难道浏览器下多了.</p>
+<p>额，还真是有意思呢！！！！.</p>
+<p>###写在最后的话###<br>兴趣是最好的老师，qq刚兴起的时候，多少人秒入门。</p>
 
- 
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/02/15/hello-world/" title="Hello World" itemprop="url">
-  
-    <h1 itemprop="name">Hello World</h1>
-    
-     
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
         
-    
-    <time datetime="2017-02-14T16:09:44.564Z" itemprop="datePublished">2017-02-15</time>
-  </a>
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
 
- 
-</section>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/02/15/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="jingjing" target="_blank" itemprop="author">jingjing</a>
+		
+  <p class="article-time">
+    <time datetime="2017-02-14T16:09:44.564Z" itemprop="datePublished"> 发表于 2017-02-15</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
 
 
 </div>
@@ -107,13 +206,42 @@
 
   
 
+
   
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
 
   <div class="rsspart">
 	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
-  
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
 
 </aside>
 </div>
@@ -126,21 +254,42 @@
 	</div>
 	
 	
-	<div class="social-font clearfix">
+	<section class="info">
+		<p> Hello ,I&#39;m Larry Page in Google. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
 		
 		
 		
 		
 		
 	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2017 
+			
 		
-		<a href="http://yoursite.com" target="_blank" title="jingjing">jingjing</a>
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="jingjing">jingjing</a>
+		
 		
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
@@ -158,18 +307,6 @@ $(document).ready(function(){
       a = $('#asidepart'),
       c = $('.closeaside'),
       o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-        
-    }
-  });
   c.click(function(){
     a.addClass('fadeOut').css('display', 'none');
     o.css('display', 'block').addClass('fadeIn');
@@ -183,6 +320,18 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
 });
 </script>
 
@@ -192,6 +341,68 @@ $(document).ready(function(){
 
 
 
-  
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
   </body>
  </html>
